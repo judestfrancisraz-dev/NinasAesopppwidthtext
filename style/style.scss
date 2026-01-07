@@ -1,0 +1,4098 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+$main-bg-colour: #2c2900;
+$anthbtn: #363308;
+$aesoplogofont: 'Arsenal', sans-serif;
+$text-colour: #ffff;
+$hover-colour: #484741;
+$diff-colour: #89877f;
+$btn-colour: #262a2b;
+$btnhover-colour: #171b1cdd;
+$nav-font: 'Marcellus', serif;
+$scntext: 'Instrument Sans', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: $main-bg-colour;
+    color: $text-colour;
+}
+
+
+
+
+header{
+    width: 100%;
+    background-color: $main-bg-colour;
+    min-height: 100px;
+
+    .in-header-div{
+        width: 100%;
+        padding: 1rem 0;
+
+        .above-ihd{
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            justify-content: center;
+            .logo{
+                font-family: $aesoplogofont;
+                color: #333;
+                font-size: 3rem;
+                font-weight: 300;
+                position: relative;
+                bottom: 0.2rem;
+            }
+        }
+
+        .below-ihd{
+            font-family: $nav-font;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+
+            .bihd-ul{
+                list-style: none;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                display: flex;
+                gap: 3rem;
+                position: relative;
+                // top: 0.5rem;
+                padding: 0 1rem;
+
+                li a{
+                    color: $text-colour;
+                    text-decoration: none;
+                    position: relative;
+                    &::after{
+                     content: '';
+                     position: absolute;
+                     background: $hover-colour;
+                     height: 3px;
+                     width: 0;
+                     left: 0;
+                     bottom: -1rem;
+                     transition: all 0.2s ease-in;
+                     }
+                     &:hover::after{
+                         width: 100%;
+                     }
+                    
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        height: auto;
+        .in-header-div .below-ihd .bihd-ul{
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    @media screen and (max-with: 600px){
+        .in-header-div .above-ihd .logo{
+            font-size: 2rem;
+        }
+        .in-header-div .below-ihd .bihd-ul{
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+}
+.homesec1{
+position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(../aesop_images/Aesop_Scents_2026_Web_Catagory_Page_Primary_Full_Bleed_Hero_Desktop_US_2880x1044px.jpg);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }  
+    }
+
+   .sec-below{
+    background-color: $main-bg-colour;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   .itemsout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inner_itemsout{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin-top: 100px;
+
+        .item{
+        width: 150px;
+        text-align: center;
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+            h3{
+                font-size: 18px;
+                margin-bottom: 16px;
+                color: $text-colour;
+                font-size: large;
+                font-weight: 90;
+            }
+        }
+
+    }
+   }
+ }
+.scsec1{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(../aesop_images/Aesopskincarefull_Category_Page_Skin_Care_Primary_Desktop_2880x1044px_V2.jpg);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }  
+}
+ .sec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+    .in_sec3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;
+
+        .insec3_header{
+            display: flex;
+            align-items: start;
+            justify-content: flex-start;
+            h2{
+                display: flex;
+                align-self: flex-start;
+                justify-self: flex-start;
+                font-family: "Inter", sans-serif;
+            }
+        }
+
+        .main_insec3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .indec3s-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .indec3-product{
+                    text-align: center;
+                    width: 399px;
+                    img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .insec3-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .innercaption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    }
+ }
+
+
+
+
+.sec4{
+    margin-top: 300px;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw1a567db2/Aesop_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
+        background-size: cover;
+        background-position: center;
+    }
+    .insec4-text{
+        position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+        .sec4btn{
+
+            button{
+            border: 3px solid $anthbtn;
+            background-color: transparent;
+            color: #fffac3;
+            width: 18.5rem;
+            height: 2.5rem;
+            transition: all 0.3s ease-in-out;   
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+            }
+        }
+    }
+}
+
+.sec5{
+    margin-top: 200px;
+
+ .sec5-container{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    .sec5-img img{
+        width: 100%;
+        height: 530px;
+    }
+    .sec5-text{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 40%;
+        font-family: "Inter", sans-serif;
+        gap: 1rem;
+        h2{
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 150;
+        }
+    }
+}
+}
+// .sec8{
+//     margin-top: 200px;
+//     position: relative;
+//     min-height: 70vh;
+//     display: flex;
+//     // align-items: center;
+
+//     .sec8-container{
+//         margin-top: 200px;
+//     height: 500px;
+//     display: flex;
+//     flex-direction: row-reverse;
+
+//     .sec8-img img{
+//         width: 100%;
+//         height: 450px; 
+//         object-fit: contain;
+//     }
+//     .insec8-text{
+//         display: flex;
+//         justify-content: start;
+//         flex-direction: column;
+//         padding-left: 1.5rem;
+//         padding-right: 1.5rem;
+//         width: 40%;
+//         font-family: "Inter", sans-serif;
+//         h2{
+//             font-size: 2rem;
+//             font-weight: 200;
+//             margin-bottom: 8px;   
+//         }
+//         p{
+//             font-size: 1.3rem;
+//             margin-bottom: 8px;
+//             font-weight: 150;   
+//         }
+//         .sec8btn button{
+//             border: 3px solid $anthbtn;
+//             background-color: transparent;
+//             color: #fffac3;
+//             width: 18.5rem;
+//             height: 2.5rem;
+//             transition: all 0.3s ease-in-out; 
+
+//             &:hover{
+//                 background-color: $anthbtn;
+//             }  
+            
+//         }
+//     }
+//     }
+// }
+// .sec8{
+//     margin-top: 100px;
+//     width: 100%;
+//     .sec8-container{
+//         display: flex;
+//         flex-direction: row-reverse;
+//         width: 100%;
+//         min-height: 500px;
+
+//         .sec8-img{
+//             width: 60%;
+//             height: 500px;
+//             img{
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//             }
+//         }
+//         .insec8-text{
+//             width: 40%;
+//             padding: 60px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             h2{
+//                 font-size: 2rem;
+//                 font-weight: 200;
+//                 margin-bottom: 20px;
+//             }
+//             p{
+//                 font-size: 1.2rem;
+//                 margin-bottom: 30px;
+//             }
+//             .sec8btn button{
+//                 width: 100%;
+//                 max-width: 250px;
+//                 height: 50px;
+//                 border: 2px solid $anthbtn;
+//                 background: transparent;
+//                 transition: 0.3s;
+
+//                 &:hover{
+//                     background: $anthbtn;
+//                     color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.sec8{
+    width: 100%;
+    margin-top: 100px;
+}
+.sec8-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.sec8-img{
+    margin-top: 100px;
+    width: 60%;
+    height: 500px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.insec8-text{
+    width: 40%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+}
+.sec8btn button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border: 2px solid $anthbtn;
+    background: transparent;
+    transition: 0.3s;
+    color: $text-colour;
+    &:hover{
+        background: $anthbtn;
+    }
+}
+
+.sec9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .sec9-card{
+        width: 380px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 20px;
+        img{
+            width: 100%;
+            height: auto;
+
+        }
+        .sec9card-text{
+            font-family: "Inter", sans-serif;
+            padding: 1rem;
+            h5{
+                font-size: 1.3rem;
+                font-weight: 200;
+                a{
+                    text-decoration: none;
+                    color: $text-colour;
+                }
+            }
+            p{
+                font-weight: 150;
+            }
+            .pb{
+                font-size: 0.8rem;
+                font-weight: 150;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #1d1b00bc;
+    // padding: 60px 40px 20px;
+    .footer-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .footerfirst{
+            h3{
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 254, 242, 0.2);
+            padding-bottom: 10px;
+            }
+            .footer-ul{
+                list-style-type: none;
+                list-style: none;
+                padding: 0;
+                margin-bottom: 12px;
+                li{
+                    list-style: none;
+                    margin-bottom: 12px;
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        transition: opacity 0.3;
+
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+            .emailinpp{
+                display: flex;
+                margin-bottom: 1px solid #fffef2;
+                padding: 5px 0;
+                input{
+                    background: transparent;
+                    border: none;
+                    width: 100%;
+                    padding: 5px;
+                    outline: none;
+                }
+                button{
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: #fff1f2;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//new&notable-page?? ---------------------------------------------------------------------------
+
+
+
+.sec1{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .insec1img{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwdfc2502f/images/pages/new-notable/Aesop_Festive_2025_NGL_Category_Page_New_and_Notable_Primary_Full_Bleed_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
+        background-size: cover;
+        background-position: center; 
+    } 
+    .insec1 .insec1-text{
+        position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }
+}
+
+.nn-sec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+
+    .innnsec2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;   
+
+         .innsec2headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 200;
+                font-family: "Inter", sans-serif;
+            }
+            h3{
+             font-weight: 200;   
+            }
+        }
+
+        .main_innnsec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec2-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec2-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec2-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec2-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btnhover-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                        }
+                       }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                color: #fffac3 ;
+                                text-decoration: none;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+
+.nnsec4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+
+    .innnsec4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;   
+
+         .innse4headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+
+        .main_innnsec4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec4-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec4-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec4-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec4-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+                       .inner42caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .ic4-price{
+                            position: relative;
+                            top: 3rem;
+                        }
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       }
+                       .inner4caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv3{
+
+                       
+                       display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btnhover-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        }
+                       .btndiv2{
+                        margin-top: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                color: #fffac3 ;
+                                text-decoration: none;
+                            }
+
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                color: #fffac3 ;
+                                text-decoration: none;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+
+                   
+                }   
+            }
+        }
+    }
+
+.nnsec5{
+    background-color: #3c2303;
+    margin-top: 200px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   min-height: 100vh;
+    .left img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       img{
+        width: 100%;
+        height: auto;
+        display: block;
+       }
+    }
+    .right{
+        padding: 4rem;
+        display: grid;
+        align-content: center;
+
+        .innnsec5-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner5caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+                       }
+
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+    }
+}
+
+.nnsec6{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ .innnsec6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;   
+
+         .innse6headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+
+        .main_innnsec6{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec6-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec6-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec6-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec6-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner6caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 19.5rem;
+                            height: 2rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                color: #fffac3 ;
+                                text-decoration: none;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    }   
+}
+.nnsec7{
+    margin-top: 200px;
+    background-color: #3c2f1c;
+   margin-top: 200px;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+
+    .nnsec7-container{
+        margin-top: 70px;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .nnsec7-img img{
+        width: 100%;
+        height: 450px; 
+        object-fit: contain;
+    }
+    .innnsec7-text{
+        margin-top: 50px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 40%;
+        font-family: "Inter", sans-serif;
+        h2{
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 8px;   
+        }
+        p{
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 150;   
+        }
+        .nnsec7btn button{
+            border: 1px solid $diff-colour;
+            background-color: transparent;
+            color: #fffac3;
+            width: 18.5rem;
+            height: 2.5rem;
+            transition: all 0.3s ease-in-out; 
+
+            &:hover{
+                background-color: $btn-colour;
+            }  
+            
+        }
+    }
+    } 
+}
+
+
+
+
+/// - - ----- ---- -- skin care --------//////
+
+
+
+.scsec2{ 
+    font-family: "Inter", sans-serif;
+    background-color: $main-bg-colour;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   .itemsout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inner_itemsout{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 100px;
+         .itemm{
+            margin-top: 1.2rem;
+        width: 150px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+            h3{
+                font-size: 18px;
+                margin-bottom: 16px;
+                color: $text-colour;
+                font-size: large;
+                font-weight: 90;
+            }
+        }
+        .item{
+        width: 150px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+            h3{
+                font-size: 18px;
+                margin-bottom: 16px;
+                color: $text-colour;
+                font-size: large;
+                font-weight: 90;
+            }
+        }
+    }
+   }
+   }
+
+
+.sectg{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
+    .text{
+        width: 50%;
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
+    }
+    .imgdiv{
+        width: 50%;
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+.scsec3{
+    background-color:#26240f;
+   width: 100%;
+    overflow-x: hidden;
+    .hbsec4g{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        @media  screen and (min-width: 768px) {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        }
+
+        .hbsec4img{
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .hbsec4product{
+            margin-bottom: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .hbsec4in{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .hbsec4productimg{
+                    // margin-top: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    img{
+                        margin-right: 20px;
+                        width: 60%;
+                    } 
+                }
+            }
+            .inhbsec4capt{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .innercapt{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: "Inter", sans-serif;
+                    flex-direction: column;
+                    gap: 1rem;
+                    text-align: center;
+                    h3{
+                        font-weight: 200;
+                        font-size: 20px;
+                    }
+                    h2{
+                        font-weight: 250;
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 200;
+                    }
+                    .hb4price{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                    }
+                }
+                .btndiv{
+                  display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }    
+                }
+            }
+        }
+    }
+    } 
+.scsec5{
+    font-family: "Inter", sans-serif;
+    margin-top: 200px;
+    background: #272517;
+    margin-bottom: 0;
+    .inscsec5{
+        .text-above{
+            display: flex;
+            justify-self: left;
+            margin-left: 100px;
+            padding-top: 200px;
+            align-self: self-start;
+            h2{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+        .outofskintypes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        }
+}
+.skintypessec5{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2.3rem;
+    .skncrd{
+        border-top: 0.5px solid $diff-colour;
+        text-align: left;
+        padding: 2.3rem;
+    }
+}
+
+
+.scsec6{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesopideal_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_2880x1044px.jpg);
+        background-size: cover;
+        background-position: center;
+
+        img{
+            display: none;
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 8%;
+        padding: 2rem;
+        color: white;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        span{
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+//---------Hnad&body-------/////
+.hbsec1{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwea49ee25/Aesop_Category_Page_Hand_Body_Care_Primary_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }
+} 
+
+
+.hbsec2{
+   font-family: "Inter", sans-serif;
+    background-color: $main-bg-colour;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   .itemsout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inner_itemsout{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 100px;
+        .item{
+        width: 220px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+            h3{
+                font-size: 18px;
+                margin-bottom: 16px;
+                color: $text-colour;
+                font-size: large;
+                font-weight: 90;
+            }
+        }
+    }
+   }  
+}
+
+.hbsec3{
+    background-color: #26240f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+
+    .innnsec2{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;  
+        margin-bottom: 100px; 
+
+         .innsec2headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 200;
+                font-family: "Inter", sans-serif;
+            }
+            h3{
+             font-weight: 200;   
+            }
+        }
+
+        .main_innnsec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec2-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec2-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec2-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec2-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv2{
+                        margin-top: 1rem;
+                         display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btnhover-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                       }
+                    }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+
+.hbsec4{
+                    background-color: #2a2028;
+
+    width: 100%;
+    overflow-x: hidden;
+    .hbsec4g{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        @media  screen and (min-width: 768px) {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        }
+
+        .hbsec4img{
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .hbsec4product{
+            background-color: #2a2028;
+            margin-bottom: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            .hbsec4in{
+                background-color: #2a2028;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .hbsec4productimg{
+
+                    margin-top: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;   
+                }
+            }
+            .inhbsec4capt{
+                background-color: #2a2028;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .innercapt{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: "Inter", sans-serif;
+                    flex-direction: column;
+                    gap: 1rem;
+                    text-align: center;
+                    h3{
+                        font-weight: 200;
+                        font-size: 20px;
+                    }
+                    h2{
+                        font-weight: 250;
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 200;
+                    }
+                    .hb4price{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                    }
+                }
+                .btndiv{
+                  display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+           
+
+.hbsec5{
+   background-color: #26240f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .innnsec2{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;  
+        margin-bottom: 100px; 
+
+         .innsec2headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 200;
+                font-family: "Inter", sans-serif;
+            }
+            h3{
+             font-weight: 200;   
+            }
+        }
+
+        .main_innnsec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec2-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec2-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec2-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec2-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    } 
+}
+
+.hbsec6{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw1a567db2/Aesop_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
+        background-size: cover;
+        background-position: center;
+    }
+    .insec4-text{
+        position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+        .sec4btn{
+
+            button{
+            border: 3px solid $anthbtn;
+            background-color: transparent;
+            color: #fffac3;
+            width: 18.5rem;
+            height: 2.5rem;
+            transition: all 0.3s ease-in-out;   
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+            }
+        }
+    }  
+}
+
+
+.hbsec7{
+    font-family: "Inter", sans-serif;
+    margin-top: 200px;
+    .hb7outofproducts{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .hb7products{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            @media screen and (min-width: 768px){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hb7product{
+                height: 800px;
+                background-color: #2a2018;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+                width: 100%;
+               .abovetext{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.9rem;
+                    margin-bottom: 20px;
+                    h3{
+                       font-size: 30px;
+                       font-weight: 200;
+                    }
+                }
+                .hb7imgdiv{
+                    width: 60%;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .inhb7seccaption{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    margin-top: 20px;
+                    .innerinhb7seccaption{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    button{
+                        background-color: $btn-colour;
+                        color: $text-colour;
+                        width: 100%;
+                        max-width: 18.5rem;
+                        height: 3rem;
+                        border: none;
+                        transition: 0.3s ease-in-out;
+                        a{
+                            text-decoration: none;
+                            color: $text-colour;
+                        }
+                        &:hover{
+                            background-color: $btnhover-colour;
+                        }
+                    }
+                    } 
+                }
+            }
+
+
+
+
+
+
+
+
+            .hb7product2{
+                height: 800px;
+                background-color: #16202c;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+                justify-content: center;
+                width: 100%;
+                .abovetext{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.9rem;
+                    margin-bottom: 20px;
+                    h3{
+                       font-size: 30px;
+                       font-weight: 200;
+                    }
+                }
+                .hb7imgdiv{
+                    width: 60%;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .inhb7seccaption{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    margin-top: 20px;
+                    .innerinhb7seccaption{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    button{
+                        a{
+                            text-decoration: none;
+                            color: $text-colour;
+                        }
+                        background-color: $btn-colour;
+                        color: $text-colour;
+                        width: 100%;
+                        max-width: 18.5rem;
+                        height: 3rem;
+                        border: none;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover{
+                            background-color: $btnhover-colour;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hbsec8{
+   margin-top: 200px;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+
+    .nnsec7-container{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+
+    .nnsec7-img img{
+        width: 100%;
+        height: 450px; 
+        object-fit: contain;
+    }
+    .innnsec7-text{
+        margin-top: 50px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 40%;
+        font-family: "Inter", sans-serif;
+
+         .sec4btn{
+
+            button{
+            border: 3px solid $anthbtn;
+            background-color: transparent;
+            color: #fffac3;
+            width: 18.5rem;
+            height: 2.5rem;
+            transition: all 0.3s ease-in-out;   
+            
+            &:hover{
+                background-color: $anthbtn;
+            }
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+            }
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 8px;   
+        }
+        p{
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 150;   
+        }
+        .nnsec7btn button{
+            border: 1px solid $diff-colour;
+            background-color: transparent;
+            color: #fffac3;
+            width: 18.5rem;
+            height: 2.5rem;
+            transition: all 0.3s ease-in-out; 
+
+            &:hover{
+                background-color: $btn-colour;
+            }  
+            
+        }
+    }
+    } 
+}
+
+.hbsec9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .innnsec2{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;  
+        margin-bottom: 100px; 
+
+         .innsec2headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 200;
+                font-family: "Inter", sans-serif;
+            }
+            h3{
+             font-weight: 200;   
+            }
+        }
+
+        .main_innnsec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec2-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec2-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec2-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec2-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                           a{
+                            text-decoration: none;
+                            color: $text-colour;
+                           }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    } 
+}
+
+.hbsec10{
+    background-color: #26240f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .innnsec2{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;  
+        margin-bottom: 100px; 
+
+         .innsec2headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 200;
+                font-family: "Inter", sans-serif;
+            }
+            h3{
+             font-weight: 200;   
+            }
+        }
+
+        .main_innnsec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec2-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec2-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec2-img 
+                    img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec2-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+
+
+
+
+
+
+
+
+
+
+                    .innnsec2-caption2{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption2{
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0.4rem;
+                        text-align: left;
+                        h2{
+                            font-weight: 200;
+                            margin-right: 10px;
+                        }
+                        h3{
+                            text-align: left;
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    } 
+}
+
+
+
+///////// - - - - -/// --- fragrance.html ------------------
+
+
+.fsec1{
+  position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw6f8f2898/Aesop_Category_Page_Fragrance_Primary_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }  
+}
+
+.fsec3{
+    margin-top: 100px;
+    background-color:#3c2303;
+   width: 100%;
+    overflow-x: hidden;
+    .hbsec4g{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        @media  screen and (min-width: 768px) {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        }
+
+        .hbsec4img{
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .hbsec4product{
+            margin-bottom: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .hbsec4in{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .hbsec4productimg{
+                    // margin-top: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    img{
+                        margin-right: 20px;
+                        width: 60%;
+                    } 
+                }
+            }
+            .inhbsec4capt{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .innercapt{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: "Inter", sans-serif;
+                    flex-direction: column;
+                    gap: 1rem;
+                    text-align: center;
+                    h3{
+                        font-weight: 200;
+                        font-size: 20px;
+                    }
+                    h2{
+                        font-weight: 250;
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 200;
+                    }
+                    .hb4price{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                    }
+                }
+                .btndiv{
+                  display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: #fffac3;
+                            }
+
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }    
+                }
+            }
+        }
+    }
+    .text{
+        position: relative;
+        inset: 7rem;
+    }
+}
+
+
+.fsec4{
+    background-color: #26240f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // margin-top: 200px;
+
+    .innnsec2{
+        margin-top: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;  
+        margin-bottom: 100px; 
+
+         .innsec2headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            h2{
+                font-weight: 200;
+                font-family: "Inter", sans-serif;
+            }
+            h3{
+             font-weight: 200;   
+            }
+        }
+
+        .main_innnsec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec2-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec2-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec2-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec2-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner2caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv2{
+                         display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btnhover-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                       }
+                    }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+
+///// - - -  - - -  - -  hair.html page  ----- - - - - -  / / / / 
+.hsec1{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwe21edf1c/Aesop_Category_Page_Hair_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }  
+}
+
+.fsec2{
+   font-family: "Inter", sans-serif;
+    background-color: $main-bg-colour;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   margin-bottom: 50px;
+   .itemsout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inner_itemsout{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 100px;
+        .item{
+        width: 220px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+            h3{
+                font-size: 18px;
+                margin-bottom: 16px;
+                color: $text-colour;
+                font-size: large;
+                font-weight: 90;
+            }
+        }
+    }
+   }   
+}
+
+//  --- - - - - - - - - -  Travel.html  - - -  - - - - - - / / / / / 
+
+
+.tsec1{
+     position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw281e90cc/images/pages/discover-travel/hero-banner-desktop.jpg?sw=2000&sh=760&sm=cut&q=70);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }  
+}
+
+.tsec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+
+    .innnsec4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;   
+
+         .innse4headertext{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+            gap: 1rem;
+            flex-direction: column;
+            h2{
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+
+        .main_innnsec4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+
+            .innnsec4-products{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                .innnsec4-product{
+                    text-align: center;
+                    width: 399px;
+                    .innnsec4-img img{
+                    width: 100%;
+                    height: auto;
+                    display: block;   
+                    }
+
+                    .innnsec4-caption{
+                       font-family: "Inter", sans-serif;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       flex-direction: column; 
+                       gap: 1rem;
+
+                       .inner4caption{
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8em;
+                        .innp{
+                            font-size: 0.9rem
+                        }
+                        h4{
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                        p{
+                            color: $diff-colour;
+                        }
+                       }
+                       .btndiv3{
+
+                       
+                       display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btnhover-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        }
+                       .btndiv{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            width: 18.5rem;
+                            height: 2.5rem;
+                            transition: all 0.3s ease-in-out;
+                            a{
+                                text-decoration: none;
+                                color: $text-colour;
+                            }
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                       }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+// /  - - - -  - - - - - - - - - - - - - contact us page - - - - - / / / / / / //?????/1111!!!!
+
+
+.cusec1{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    .inhbsec1{
+        position: absolute;
+        inset: 0;
+        background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw1c63d6c9/images/pages/contact-us/Aesop_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_1920x420.jpg?sw=1920&sh=420&sm=cut&q=70);
+        background-size: cover;
+        background-position: center; 
+    } 
+ .inhbsec1-text{
+       position: relative;
+        max-width: 600px;
+        inset: 2.5rem;
+        color: white;
+        display: flex;
+        top: 200px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+        }
+    }
+}
+
+.cusec2{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cusec2container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Inter", sans-serif;
+        h4{
+            font-size: small;
+        }
+        h5{
+            font-size: smaller;
+        }
+        p{
+            font-size: small;
+        }
+    }
+}
+
+.cusec3{
+    padding: 80px 40px;
+    font-family: "Inter", sans-serif;
+    .cusec3container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px;
+        @media screen and (max-width: 900px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 587px){
+            grid-template-columns: 1fr;
+        }
+        .cusec3card{
+            padding: 40px;
+            border: 1px solid #ddd;
+            i{
+                font-size: 26px;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            h3{
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+            p{
+                font-size: 15px;
+                margin-bottom: 24px;
+                color: #555;
+            }
+            a{
+                font-size: 14px;
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.cusec4{
+    width: 100%;
+    background: #26240f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    .cusec4container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        h1{
+            font-weight: 250;
+        }
+        h3{
+            font-weight: 250;
+            font-size: large;
+        }
+    }
+}
+
+
+.esec1{
+    padding: 80px 40px;
+    font-family: "Inter", sans-serif;
+    .esec1container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 420px minmax(0, 1fr);
+        gap: 60px;
+
+        @media screen and (max-width: 900px){
+            grid-template-columns: 300px minmax(0, 1fr);
+            gap: 40px;
+        }
+        @media screen and (max-width: 700px){
+            grid-template-columns: 1fr;
+        }
+
+        aside{
+            @media screen and (max-width: 900px){
+                margin-bottom: 40px;
+            }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    margin-bottom: 14px;
+                    a{
+                        font-size: 14px;
+                        color: #555;
+                        text-decoration: none;
+                        .enquiry{
+                            color: #000;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .maintext{
+            h2{
+                margin-bottom: 0.5rem;
+                font-weight: 350;
+            }
+            ul{
+                font-weight: 250;
+                font-size: 14px;
+            }
+            .difful{
+                            list-style: none;
+                            font-weight: 250;
+                            font-size: 14px;
+                        }
+            h1{
+                font-size: 2rem;
+                margin-bottom: 24px;
+                display: flex;
+                justify-self: center;
+                margin-right: 4rem;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 20px;
+                max-width: 650px;
+                font-weight: 250;
+            }
+
+            .enquiry-form{
+                margin-top: 60px;
+                .formcont{
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 24px;
+                    margin-bottom: 32px;
+                    .formdiv{
+                        display: flex; 
+                        flex-direction: column;
+                        label{
+                            font-size: 13px;
+                            margin-bottom: 6px;
+                            color: $text-colour;
+                        }
+                        input{
+                            padding: 12px;
+                            font-size: 14px;
+                            border: 1px solid #ccc;
+                            font-family: inherit;
+                            background-color: transparent;
+                        }
+                    }
+                    .enqbutton{
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            transition: all 0.3s ease-in-out;
+                            height: 3rem;
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                    }
+                    button{
+
+                    
+                   border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+                        }
+                         @media screen and (max-width: 600px){
+                                
+                                    grid-template-columns: 1fr;
+                            }
+                }
+            }
+        }
+    }
+}
+
+.stsec1{
+    padding: 80px 40px;
+    font-family: "Inter", sans-serif;
+    .stsec1container{
+        max-width: 1200px;
+        margin: 0 auto;
+        h1{
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .countries{
+            @media screen and (max-width: 900px){
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            @media screen and (max-width: 600px){
+                grid-template-columns: 1fr;
+            }
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px 40px;
+            li{
+                font-size: 15px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #e0e0e0;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+.reviewmain{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+    font-family: "Inter", sans-serif;
+    h1{
+        margin-left: 20rem;
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    p{
+        text-align: center;
+    }
+    .reviewfrm{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        @media screen and (max-width: 600px){
+            grid-template-columns: 1fr;
+        }
+
+        .formdiv{
+            display: flex;
+            flex-direction: column;
+            label{
+                font-size: 0.9rem;
+                margin-bottom: 6px;
+                background: transparent;
+            }
+            input{
+                background: transparent;
+                padding: 0.8rem;
+                font-size: 0.9rem;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+           
+                        }
+
+                         button{
+
+                            margin-top: 20px;
+                            border: 1px solid transparent;
+                            background-color: $btn-colour;
+                            color: #fffac3;
+                            transition: all 0.3s ease-in-out;
+                            height: 2.5rem;
+                            &:hover{
+                                background-color: $btnhover-colour;
+                            }
+        }
+    }
+}
+
+.productsec{
+    width: 100%;
+    padding: 64px 24px;
+        font-family: "Inter", sans-serif;
+    .cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        max-width: 1400px;
+        margin: 0 auto;
+        @media screen and (max-width: 900px){
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .prdctimg{
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .sectext{
+            display: grid;
+            align-content: start;
+            gap: 1rem;
+            .pprice{
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: $text-colour;
+            }
+            h2{
+            font-size: 2rem;
+            font-weight: 400;    
+            }
+            p{
+                font-size: 1rem;
+                max-width: 480px;
+                color: $text-colour;
+            }
+            .singlediv{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border: 1px solid $diff-colour;
+                width: 450px;
+                gap: 0.1rem;
+                height: 3.5rem;
+                h3{
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.39);
+                }
+            }
+        .price{
+            font-size: 18px;
+            button{
+                font-size: 16px;
+                border: 3px solid #46421e;
+                background: rgba(128, 128, 128, 0.493);
+                width: 450px;
+                height: 2.6rem;
+                color: $text-colour;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background: $btnhover-colour;
+                }
+            }
+        }
+        }
+    }
+}
+
+
+.productsec2{
+    width: 100%;
+    padding: 64px 24px;
+        font-family: "Inter", sans-serif;
+    .cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        max-width: 1400px;
+        margin: 0 auto;
+        @media screen and (max-width: 900px){
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .prdctimg{
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .sectext{
+            display: grid;
+            align-content: start;
+            gap: 1rem;
+            .pprice{
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: $text-colour;
+            }
+            h2{
+            font-size: 2rem;
+            font-weight: 400;    
+            }
+            p{
+                font-size: 1rem;
+                max-width: 480px;
+                color: $text-colour;
+            }
+            .singlediv{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 450px;
+                gap: 1rem;
+                height: 3.5rem;
+                button{
+                    width: 400px;
+                    height: 3.5rem;
+                    background: transparent;
+                    border: 1px solid #403e0c;
+                    cursor: pointer;
+                    color: white;
+                    &:hover{
+                        border: 1px solid rgba(255, 255, 255, 0.362);
+                    }
+                    &:active{
+                        border: 2px solid white;
+                    }
+                }
+            }
+        .price{
+            font-size: 18px;
+            button{
+                font-size: 16px;
+                border: 3px solid #46421e;
+                background: rgba(128, 128, 128, 0.493);
+                width: 450px;
+                height: 2.6rem;
+                color: $text-colour;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background: $btnhover-colour;
+                }
+            }
+        }
+        }
+    }
+}
+
+.gsec1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    h2{
+        font-family: $scntext;
+        font-weight: 350;
+        text-align: left;
+        position: relative;
+        right: 300px;
+    }
+    .imgdiv{
+        width: 70%;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+.guidemain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gsec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'inter', sans-serif;
+    .ingsec2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        .right{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            display: flex;
+            gap: 2.5rem;
+            p{
+            font-family: 'inter', sans-serif;
+            font-weight: 200;
+            text-align: center;
+            max-width: 700px;
+            }
+            h2{
+                font-family: $scntext;
+                text-align: center;
+            }
+            h3{
+            font-family: $scntext;
+                text-align: center;
+            }
+        .photodiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        }
+    }
+}
+
+
+
+.footer{
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+
+        .left{
+            width: 40%;
+            padding-right: 5%;
+            h2{
+                font-size: 1.1rem;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .foterform{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                input{
+                    background: transparent;
+                    padding: 12px 0;
+                    border: none;
+                    border-bottom: 1px solid $text-colour;
+                    width: 100%;
+                    max-width: 300px;
+                    outline: none;
+                    margin-bottom: 20px;
+                    font-size: 0.9rem;
+                }
+                button{
+                    width: 18rem;
+                    height: 3rem;
+                    background: transparent;
+                    color: white;
+                    border: 1px solid $text-colour;
+                    transition: 0.3s ease;
+
+                    &:hover{
+                        background: transparent;
+                        color: $text-colour;
+                    }
+                }
+            }
+        }
+
+        .right{
+            width: 50%;
+
+            .links{
+                display: flex;
+                justify-content: flex-start;
+                gap: 80px;
+
+                .inlinks{
+                    h3{
+                        font-size: 0.9rem;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                    }
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        li{
+                            margin-bottom: 10px;
+                            a{
+                                text-decoration: none;
+                                
+                                color: $text-colour;
+                                font-size: 0.85rem;
+                                transition: 0.2s;
+
+                                &:hover{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+
+                    p a{
+                        text-decoration: none;
+                        color: $text-colour;
+                        font-size: 0.85rem;
+                        &:hover{
+                                    font-weight: 600;
+                                }
+                    }
+                }
+            }
+
+            .socialsicons{
+                margin-top: 40px;
+                display: flex;
+                gap: 20px;
+
+                .sclicon{
+                    font-size: 1.1rem;
+                    color: $text-colour;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                        color: #1c1a0b;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        font-size: 0.75rem;
+        border-top: 1px solid #eeeeee;
+        color: #777;
+        a{
+            color: #333;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+   .sec8-container{
+    flex-direction: column;
+   }
+   .sec8-img, .insec8-text{
+    width: 100%;
+   }
+   .sec8-img{
+    height: 350px;
+   }
+   .insec8-text{
+    text-align: center;
+    padding: 40px 20px;
+   }
+
+
+}
+@media screen and (max-width: 768px){
+    .footer .container{
+        .left, .right{
+            width: 100%;
+            padding-right: 0;
+        }
+        .left{
+            margin-bottom: 50px;
+        }
+        .right .links{
+            gap: 40px;
+        }
+       
+    }
+    .sec4{
+        min-height: auto;
+        .insec4imgdiv{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .insec4-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            padding-top: 0;
+        }
+    }
+    .sec5 .sec5-container{
+        margin-top: 10px;
+        flex-direction: column;
+        .sec5-img img{
+            object-fit: contain;
+        }
+        .sec5-text{
+            width: 100%;
+            position: relative;
+            bottom: 60px;
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .sec8 .sec8-container{
+     margin-top: 10px;
+     flex-direction: column;
+     .sec8-img img{
+        object-fit: contain;
+     }
+     .sec8-text{
+        width: 100%;
+        margin-bottom: 4rem;
+        h2{
+            font-size: 3rem;
+        }
+     }   
+    }
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .bottom{
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 254, 242, 0.1);
+        text-align: left;
+        font-size: 12px;
+    }
+    .sec1{
+        min-height: auto;
+        .insec1img{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .insec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            padding-top: 0;
+        }
+    }
+    .nnsec5{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        .left img{
+            height: 100vh;
+        }
+    }
+
+
+
+
+    .hbsec8{
+        height: 100vh;
+ .nnsec7-container{
+     margin-top: 10px;
+     flex-direction: column;
+     .nnsec7-img img{
+        object-fit: contain;
+     }
+     .innnsec7-text{
+
+       position: relative;
+       bottom: 60px;
+        width: 100%;
+        margin-bottom: 4rem;
+        h2{
+            font-size: 3rem;
+        }
+     }
+    }
+    }
+
+
+
+     .hbsec1{
+        min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }
+    }
+    .homesec1{
+         min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }
+    }
+
+    .skintypessec5{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .scsec6{
+        min-height: auto;
+        .insec4imgdiv{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .insec4-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            padding-top: 0;
+        }
+    }
+
+
+
+    .sec1{
+        min-height: auto;
+        .insec1img{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .insec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            padding-top: 0;
+        }
+    }
+    .nnsec5{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        .left img{
+            height: 100vh;
+        }
+    }
+
+    .hb7products{
+        grid-template-columns: 1fr;
+
+        img{
+            width: 100%;
+        }
+    }
+
+
+
+    .nnsec7{
+        height: 100vh;
+ .nnsec7-container{
+     margin-top: 10px;
+     flex-direction: column;
+     .nnsec7-img img{
+        object-fit: contain;
+     }
+     .innnsec7-text{
+        width: 100%;
+        position: relative;
+        bottom: 60px;
+        h2{
+            font-size: 3rem;
+        }
+     }   
+    }
+    }
+
+    .hbsec4{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+    .hbsec6{
+        min-height: auto;
+        .insec4imgdiv{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .insec4-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            padding-top: 0;
+            bottom: 60px;
+        }
+    }
+    .scsec6{
+         min-height: auto;
+        .insec4imgdiv{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .insec4-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            padding-top: 0;
+        }
+    }
+    .fsec1{
+         min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }
+    }
+    .hsec1{
+          min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }   
+        }
+        .scsec1{
+              min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }   
+        }
+        .tsec1{
+             min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }
+        }
+        .cusec1{
+             min-height: auto;
+        .inhbsec1{
+            position: static;
+            height: 70vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .inhbsec1 .inhbsec1-text{
+            position: relative;
+            inset: 0;
+            padding-left: 1rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 400px;
+        }
+        }
+}
+@media screen and (min-width: 768px){
+     .hbsec4{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+@media screen and (max-width: 500px){
+    .skintypessec5{
+        grid-template-columns: 1fr;
+    }
+
+    .sec5 .sec5-container{
+        margin-top: 10px;
+        flex-direction: column;
+        .sec5-img img{
+            object-fit: contain;
+        }
+        .sec5-text{
+            width: 100%;
+            position: relative;
+            bottom: 100px;
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+
+     .socialsicons{
+            flex-direction: column;
+        }
+}
