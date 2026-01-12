@@ -34,7 +34,7 @@ header .in-header-div .above-ihd {
 }
 header .in-header-div .above-ihd .logo {
   font-family: "Arsenal", sans-serif;
-  color: #333;
+  color: #4f4a4a;
   font-size: 3rem;
   font-weight: 300;
   position: relative;
@@ -95,35 +95,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .homesec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
 }
 .homesec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(../aesop_images/Aesop_Scents_2026_Web_Catagory_Page_Primary_Full_Bleed_Hero_Desktop_US_2880x1044px.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.homesec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.homesec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.homesec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.homesec1 .inhbsec1-text p {
-  font-weight: 200;
+.homesec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .sec-below {
@@ -165,35 +155,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .scsec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
 }
 .scsec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(../aesop_images/Aesopskincarefull_Category_Page_Skin_Care_Primary_Desktop_2880x1044px_V2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.scsec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.scsec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.scsec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.scsec1 .inhbsec1-text p {
-  font-weight: 200;
+.scsec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .sec3 {
@@ -450,35 +430,26 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   font-weight: 150;
 }
 
-.sec1 {
+.nnsec1 {
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
+}
+.nnsec1 .inhbsec1 {
   position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  line-height: 0;
 }
-.sec1 .insec1img {
-  position: absolute;
-  inset: 0;
-  background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwdfc2502f/images/pages/new-notable/Aesop_Festive_2025_NGL_Category_Page_New_and_Notable_Primary_Full_Bleed_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
-  background-size: cover;
-  background-position: center;
+.nnsec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.sec1 .insec1 .insec1-text {
-  position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
-}
-.sec1 .insec1 .insec1-text h1 {
-  font-weight: 600;
-}
-.sec1 .insec1 .insec1-text p {
-  font-weight: 200;
+.nnsec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .nn-sec2 {
@@ -1273,35 +1244,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .hbsec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
 }
 .hbsec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwea49ee25/Aesop_Category_Page_Hand_Body_Care_Primary_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
-  background-size: cover;
-  background-position: center;
-}
-.hbsec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.hbsec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.hbsec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.hbsec1 .inhbsec1-text p {
-  font-weight: 200;
+.hbsec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hbsec2 {
@@ -2143,35 +2104,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .fsec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
 }
 .fsec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw6f8f2898/Aesop_Category_Page_Fragrance_Primary_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
-  background-size: cover;
-  background-position: center;
-}
-.fsec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.fsec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.fsec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.fsec1 .inhbsec1-text p {
-  font-weight: 200;
+.fsec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .fsec3 {
@@ -2389,35 +2340,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .hsec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
 }
 .hsec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwe21edf1c/Aesop_Category_Page_Hair_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
-  background-size: cover;
-  background-position: center;
-}
-.hsec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.hsec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.hsec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.hsec1 .inhbsec1-text p {
-  font-weight: 200;
+.hsec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .fsec2 {
@@ -2462,35 +2403,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .tsec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 100px;
 }
 .tsec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw281e90cc/images/pages/discover-travel/hero-banner-desktop.jpg?sw=2000&sh=760&sm=cut&q=70);
-  background-size: cover;
-  background-position: center;
-}
-.tsec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.tsec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.tsec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.tsec1 .inhbsec1-text p {
-  font-weight: 200;
+.tsec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .tsec3 {
@@ -2602,35 +2533,25 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .cusec1 {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 200px;
 }
 .cusec1 .inhbsec1 {
-  position: absolute;
-  inset: 0;
-  background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dw1c63d6c9/images/pages/contact-us/Aesop_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_1920x420.jpg?sw=1920&sh=420&sm=cut&q=70);
-  background-size: cover;
-  background-position: center;
-}
-.cusec1 .inhbsec1-text {
   position: relative;
-  max-width: 600px;
-  inset: 2.5rem;
-  color: white;
-  display: flex;
-  top: 200px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: "Inter", sans-serif;
+  width: 100%;
+  line-height: 0;
 }
-.cusec1 .inhbsec1-text h1 {
-  font-weight: 600;
+.cusec1 .inhbsec1 .inhbsec1img {
+  width: 100%;
+  height: auto;
 }
-.cusec1 .inhbsec1-text p {
-  font-weight: 200;
+.cusec1 .inhbsec1 .inhbsec1img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .cusec2 {
@@ -3420,40 +3341,6 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   .hbsec8 .nnsec7-container .innnsec7-text h2 {
     font-size: 3rem;
   }
-  .hbsec1 {
-    min-height: auto;
-  }
-  .hbsec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .hbsec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
-  }
-  .homesec1 {
-    min-height: auto;
-  }
-  .homesec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .homesec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
-  }
   .skintypessec5 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3556,91 +3443,6 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
     padding-left: 1rem;
     padding-bottom: 2rem;
     padding-top: 0;
-  }
-  .fsec1 {
-    min-height: auto;
-  }
-  .fsec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .fsec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
-  }
-  .hsec1 {
-    min-height: auto;
-  }
-  .hsec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .hsec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
-  }
-  .scsec1 {
-    min-height: auto;
-  }
-  .scsec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .scsec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
-  }
-  .tsec1 {
-    min-height: auto;
-  }
-  .tsec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .tsec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
-  }
-  .cusec1 {
-    min-height: auto;
-  }
-  .cusec1 .inhbsec1 {
-    position: static;
-    height: 70vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .cusec1 .inhbsec1 .inhbsec1-text {
-    position: relative;
-    inset: 0;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 400px;
   }
 }
 @media screen and (min-width: 768px) {
