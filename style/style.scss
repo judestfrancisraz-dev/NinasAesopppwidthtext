@@ -176,6 +176,24 @@ width: 100%;
                 font-weight: 90;
             }
         }
+        .item2{
+            width: 150px;
+        text-align: center;
+        position: relative;
+        top: 11px;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+            h3{
+                font-size: 18px;
+                margin-bottom: 16px;
+                color: $text-colour;
+                font-size: large;
+                font-weight: 90;
+            }
+        }
 
     }
    }
