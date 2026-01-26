@@ -199,22 +199,111 @@ width: 100%;
    }
  }
 .scsec1{
-   width: 100%;
-    display: block;
-    margin-bottom: 100px;
-    .inhbsec1{
-       
-        position: relative;
+    font-family: 'inter', sans-serif;
+     position: relative;
+     bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
         width: 100%;
-        line-height: 0;
-        .inhbsec1img{
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop444_Category_Page_Skin_Care_Primary_Desktop_2880x1044px_V2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
             }
         }
     }
@@ -262,10 +351,41 @@ width: 100%;
                 .indec3-product{
                     text-align: center;
                     width: 399px;
-                    img{
-                    width: 100%;
-                    height: auto;
-                    display: block;   
+                    .insec3-img{
+                        position: relative;
+                        width: 100%;
+                        line-height: 0;
+
+                        .first{
+                            position: relative;
+                            z-index: 2;
+                            width: 100%;
+                            height: auto;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        .second{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 1;
+                            opacity: 0;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        &:hover{
+                            .first{
+                                opacity: 0;
+
+                            }
+
+                            .second{
+                                opacity: 1;
+                            }
+                        }
                     }
 
                     .insec3-caption{
@@ -399,109 +519,10 @@ width: 100%;
     }
 }
 }
-// .sec8{
-//     margin-top: 200px;
-//     position: relative;
-//     min-height: 70vh;
-//     display: flex;
-//     // align-items: center;
 
-//     .sec8-container{
-//         margin-top: 200px;
-//     height: 500px;
-//     display: flex;
-//     flex-direction: row-reverse;
-
-//     .sec8-img img{
-//         width: 100%;
-//         height: 450px; 
-//         object-fit: contain;
-//     }
-//     .insec8-text{
-//         display: flex;
-//         justify-content: start;
-//         flex-direction: column;
-//         padding-left: 1.5rem;
-//         padding-right: 1.5rem;
-//         width: 40%;
-//         font-family: "Inter", sans-serif;
-//         h2{
-//             font-size: 2rem;
-//             font-weight: 200;
-//             margin-bottom: 8px;   
-//         }
-//         p{
-//             font-size: 1.3rem;
-//             margin-bottom: 8px;
-//             font-weight: 150;   
-//         }
-//         .sec8btn button{
-//             border: 3px solid $anthbtn;
-//             background-color: transparent;
-//             color: #fffac3;
-//             width: 18.5rem;
-//             height: 2.5rem;
-//             transition: all 0.3s ease-in-out; 
-
-//             &:hover{
-//                 background-color: $anthbtn;
-//             }  
-            
-//         }
-//     }
-//     }
-// }
-// .sec8{
-//     margin-top: 100px;
-//     width: 100%;
-//     .sec8-container{
-//         display: flex;
-//         flex-direction: row-reverse;
-//         width: 100%;
-//         min-height: 500px;
-
-//         .sec8-img{
-//             width: 60%;
-//             height: 500px;
-//             img{
-//                 width: 100%;
-//                 height: 100%;
-//                 object-fit: cover;
-//             }
-//         }
-//         .insec8-text{
-//             width: 40%;
-//             padding: 60px;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             h2{
-//                 font-size: 2rem;
-//                 font-weight: 200;
-//                 margin-bottom: 20px;
-//             }
-//             p{
-//                 font-size: 1.2rem;
-//                 margin-bottom: 30px;
-//             }
-//             .sec8btn button{
-//                 width: 100%;
-//                 max-width: 250px;
-//                 height: 50px;
-//                 border: 2px solid $anthbtn;
-//                 background: transparent;
-//                 transition: 0.3s;
-
-//                 &:hover{
-//                     background: $anthbtn;
-//                     color: white;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 .sec8{
+    font-family: $scntext;
     width: 100%;
     margin-top: 100px;
 }
@@ -612,28 +633,6 @@ width: 100%;
 
 
 
-.nnsec1{
-
-    width: 100%;
-    display: block;
-    margin-bottom: 100px;
-    .inhbsec1{
-       
-        position: relative;
-        width: 100%;
-        line-height: 0;
-        .inhbsec1img{
-            width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
-            }
-        }
-    }
-}
 
 .nn-sec2{
     display: flex;
@@ -681,11 +680,43 @@ width: 100%;
                 .innnsec2-product{
                     text-align: center;
                     width: 399px;
-                    .innnsec2-img img{
-                    width: 100%;
-                    height: auto;
-                    display: block;   
+                    .innnsec2-img{
+                        position: relative;
+                        width: 100%;
+                        line-height: 0;
+
+                        .first{
+                            position: relative;
+                            z-index: 2;
+                            width: 100%;
+                            height: auto;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        .second{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 1;
+                            opacity: 0;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        &:hover{
+                            .first{
+                                opacity: 0;
+
+                            }
+
+                            .second{
+                                opacity: 1;
+                            }
+                        }
                     }
+
 
                     .innnsec2-caption{
                        font-family: "Inter", sans-serif;
@@ -798,12 +829,42 @@ width: 100%;
                 .innnsec4-product{
                     text-align: center;
                     width: 399px;
-                    .innnsec4-img img{
-                    width: 100%;
-                    height: auto;
-                    display: block;   
-                    }
+                    .innnsec4-img{
+                        position: relative;
+                        width: 100%;
+                        line-height: 0;
 
+                        .first{
+                            position: relative;
+                            z-index: 2;
+                            width: 100%;
+                            height: auto;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        .second{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 1;
+                            opacity: 0;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        &:hover{
+                            .first{
+                                opacity: 0;
+
+                            }
+
+                            .second{
+                                opacity: 1;
+                            }
+                        }
+                    }
                     .innnsec4-caption{
                        font-family: "Inter", sans-serif;
                        display: flex;
@@ -1017,10 +1078,41 @@ width: 100%;
                 .innnsec6-product{
                     text-align: center;
                     width: 399px;
-                    .innnsec6-img img{
-                    width: 100%;
-                    height: auto;
-                    display: block;   
+                    .innnsec6-img{
+                        position: relative;
+                        width: 100%;
+                        line-height: 0;
+
+                        .first{
+                            position: relative;
+                            z-index: 2;
+                            width: 100%;
+                            height: auto;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        .second{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 1;
+                            opacity: 0;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        &:hover{
+                            .first{
+                                opacity: 0;
+
+                            }
+
+                            .second{
+                                opacity: 1;
+                            }
+                        }
                     }
 
                     .innnsec6-caption{
@@ -1435,7 +1527,6 @@ width: 100%;
         }
     }
 
-
     @media screen and (max-width: 1024px){
         min-height: 60vh;
 
@@ -1470,57 +1561,227 @@ width: 100%;
         }
     }
 }
+.hmsec1{
+        font-family: 'inter', sans-serif;
+    position: relative;
+    bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop_Scents_2026_Web_Catagory_Page_Primary_Full_Bleed_Hero_Desktop_US_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: white;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        span{
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
 
 //---------Hnad&body-------/////
-// .hbsec1{
-//     position: relative;
-//     min-height: 70vh;
-//     display: flex;
-//     align-items: center;
-//     .inhbsec1{
-//         position: absolute;
-//         inset: 0;
-//         background-image: url(https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-Library/default/dwea49ee25/Aesop_Category_Page_Hand_Body_Care_Primary_Desktop_2880x1044px.jpg?sw=2000&sh=725&sm=cut&q=70);
-//         background-size: cover;
-//         background-position: center; 
-//     } 
-//  .inhbsec1-text{
-//        position: relative;
-//         max-width: 600px;
-//         inset: 2.5rem;
-//         color: white;
-//         display: flex;
-//         top: 200px;
-//         justify-content: center;
-//         flex-direction: column;
-//         gap: 1rem;
-//         font-family: "Inter", sans-serif;
-//         h1{
-//             font-weight: 600;
-//         }
-//         p{
-//             font-weight: 200;
-//         }
-//     }
-// } 
 
 .hbsec1{
+    font-family: 'inter', sans-serif;
+   position: relative;
+     bottom: 19px;
     width: 100%;
-    display: block;
-    margin-bottom: 100px;
-    .inhbsec1{
-       
-        position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
         width: 100%;
-        line-height: 0;
-        .inhbsec1img{
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop555_Category_Page_Hand_Body_Care_Primary_Desktop_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
             }
         }
     }
@@ -1616,10 +1877,41 @@ width: 100%;
                 .innnsec2-product{
                     text-align: center;
                     width: 399px;
-                    .innnsec2-img img{
-                    width: 100%;
-                    height: auto;
-                    display: block;   
+                    .innnsec2-img{
+                        position: relative;
+                        width: 100%;
+                        line-height: 0;
+
+                        .first{
+                            position: relative;
+                            z-index: 2;
+                            width: 100%;
+                            height: auto;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        .second{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 1;
+                            opacity: 0;
+                            transition: opacity 0.6s ease-in-out;
+                        }
+
+                        &:hover{
+                            .first{
+                                opacity: 0;
+
+                            }
+
+                            .second{
+                                opacity: 1;
+                            }
+                        }
                     }
 
                     .innnsec2-caption{
@@ -2450,26 +2742,113 @@ width: 100%;
 
 
 .fsec1{
-
- width: 100%;
-    display: block;
-    margin-bottom: 100px;
-    .inhbsec1{
-       
-        position: relative;
+    font-family: 'inter', sans-serif;
+  position: relative;
+     bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
         width: 100%;
-        line-height: 0;
-        .inhbsec1img{
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop777_Category_Page_Fragrance_Primary_Desktop_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
             }
         }
-      
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
     }
 }
 
@@ -2704,22 +3083,111 @@ width: 100%;
 
 ///// - - -  - - -  - -  hair.html page  ----- - - - - -  / / / / 
 .hsec1{
-   width: 100%;
-    display: block;
-    margin-bottom: 100px;
-    .inhbsec1{
-       
-        position: relative;
+    font-family: 'inter', sans-serif;
+  position: relative;
+     bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
         width: 100%;
-        line-height: 0;
-        .inhbsec1img{
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop_Category_Page_Hair_Desktop_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
             }
         }
     }
@@ -2770,27 +3238,225 @@ width: 100%;
 
 
 .tsec1{
+    font-family: 'inter', sans-serif;
+   position: relative;
+     bottom: 6px;
     width: 100%;
-    display: block;
-    margin-bottom: 100px;
-    .inhbsec1{
-       
-        position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
         width: 100%;
-        line-height: 0;
-        .inhbsec1img{
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/hero-banner-desktop.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
             }
         }
     }
 }
+.gfsec1{
+    font-family: 'inter', sans-serif;
+      position: relative;
+     bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop_Festive_2025_NGL_Category_Page_Gifts_Primary_V2_GL_Full_Bleed_Desktop_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
 
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
 .tsec3{
     display: flex;
     align-items: center;
@@ -2913,28 +3579,345 @@ width: 100%;
 // /  - - - -  - - - - - - - - - - - - - contact us page - - - - - / / / / / / //?????/1111!!!!
 
 
+
 .cusec1{
-   width: 100%;
-    display: block;
-    margin-bottom: 200px;
-    .inhbsec1{
-       
-        position: relative;
+    font-family: 'inter', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
         width: 100%;
-        line-height: 0;
-        .inhbsec1img{
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .insec4imgdiv{
+        margin-bottom: 100px;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop555_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_1920x420.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (Max-width: 1020px){
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        img{
+            display: none;
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 20%;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: auto;
-            img{
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            position: relative;
+            bottom: 200px;
+            margin-left: 0;
+            max-width: 100%;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
+.expe1{
+    font-family: 'inter', sans-serif;
+     position: relative;
+     bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop_Experience_Page_Primary_Desktop_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
             }
         }
     }
 }
 
+
+.nnsec1{
+        font-family: 'inter', sans-serif;
+    position: relative;
+    bottom: 19px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesop666_Festive_2025_NGL_Category_Page_New_and_Notable_Primary_Full_Bleed_Desktop_2880x1044px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img{
+            display: none;
+
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 33%;
+        padding: 2rem;
+        color: #fffac3;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        // margin-bottom: 60px;
+        position: relative;
+        top: 1px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+            color: #fffac3;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
 .cusec2{
     width: 100%;
     margin-top: 100px;
@@ -3482,133 +4465,798 @@ width: 100%;
     }
 }
 
+.gsec3{
+     position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    margin-top: 100px;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesopseasonalgiftkits_Festive_2025_NGL_Category_Page_Gifts_Secondary_Banner_Seasonal_Kits_GL_Desktop_2880x1044px.jpg);
+        background-size: cover;
+        background-position: center;
 
+        img{
+            display: none;
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 8%;
+        padding: 2rem;
+        color: white;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        span{
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+
+    
+}
+
+
+.gsec5{
+        position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    margin-top: 100px;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesopcategorypage_Festive_2025_NGL_Category_Page_Gifts_Secondary_Banner_Widely_Cherished_Desktop_2880x1044px.jpg);
+        background-size: cover;
+        background-position: center;
+
+        img{
+            display: none;
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 8%;
+        padding: 2rem;
+        color: white;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        span{
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+.gsec7{
+      position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    margin-top: 100px;
+    .insec-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .insec4imgdiv{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url(../aesop_images/Aesopcheerful_Festive_2025_NGL_Category_Page_Gifts_Secondary_Banner_Fragrance_Desktop_2880x1044px.jpg);
+        background-size: cover;
+        background-position: center;
+
+        img{
+            display: none;
+        }
+    }
+
+    .insec4-text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 8%;
+        padding: 2rem;
+        color: white;
+        font-family: "inter" sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        span{
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .sec4btn button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid $anthbtn;
+            color: white;
+            transition: all 0.4s;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: $text-colour;
+            }
+
+            &:hover{
+                background-color: $anthbtn;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1024px){
+        min-height: 60vh;
+
+        .insec4-text{
+            margin-left: 5%;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        .insec4imgdiv{
+            position: relative;
+            height: 350px;
+        }
+        .insec4-text{
+            margin-left: 0;
+            max-width: 100%;
+            padding: 3rem 1.5rem;
+            text-align: left;
+
+            h1{
+                font-size: 1.8rem;
+            }
+            .sec4btn button{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+.gsec9{
+    font-family: $scntext;
+    width: 100%;
+    margin-top: 100px;
+}
+.gsec9-container{
+    display: flex;
+    flex-direction: row;
+}
+.sec8-img{
+    margin-top: 100px;
+    width: 60%;
+    height: 500px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.insec8-text{
+    width: 40%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+}
+.sec8btn button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border: 2px solid $anthbtn;
+    background: transparent;
+    transition: 0.3s;
+    color: $text-colour;
+    &:hover{
+        background: $anthbtn;
+    }
+}
+
+
+.lsec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+    .lsec2-container{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 80px;
+
+        @media screen and (max-width: 1300px){
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @media screen and (max-width: 878px){
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        .pic-items{
+            width: 370px;
+            height: 353px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid red;
+            @media screen and (max-width: 424px){
+                width: 250px;
+                height: 320px;
+            }
+            @media screen and (max-width: 300px){
+                width: 200px;
+                height: 270px;
+            }
+            @media screen and (max-width: 238px){
+                width: 150px;
+                height: 220px;
+            }
+            .top{
+                height: 70%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 3px solid purple;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .bottom{
+                height: 30%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border: 3px solid orange;
+                .bottom-text{
+                    position: relative;
+                    left: 10px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    h3{
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .fpp{
+                        font-size: 14px;
+                        font-weight: 250;
+                        color: #8a8080;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.psec7{
+    margin-top: 100px;
+     width: 100%;
+    background: #26240f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    .cusec4container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        h1{
+            font-weight: 250;
+        }
+        h3{
+            font-weight: 250;
+            font-size: large;
+        }
+    }
+}
+// .footer{
+//     font-family: 'inter', sans-serif;
+//     width: 100%;
+//     border-top: 1px solid #e2e2e2;
+//     .container{
+//         display: flex;
+//         flex-wrap: wrap;
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         padding: 60px 20px;
+
+//         .left{
+//             width: 40%;
+//             padding-right: 5%;
+//             h2{
+//                 font-size: 1.1rem;
+//                 font-weight: 500;
+//                 margin-bottom: 20px;
+//             }
+//             .foterform{
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 2rem;
+//                 input{
+//                     background: transparent;
+//                     padding: 12px 0;
+//                     border: none;
+//                     border-bottom: 1px solid $text-colour;
+//                     width: 100%;
+//                     max-width: 300px;
+//                     outline: none;
+//                     margin-bottom: 20px;
+//                     font-size: 0.9rem;
+//                 }
+//                 button{
+//                     width: 18rem;
+//                     height: 3rem;
+//                     background: transparent;
+//                     color: white;
+//                     border: 1px solid $text-colour;
+//                     transition: 0.3s ease;
+
+//                     &:hover{
+//                         background: transparent;
+//                         color: $text-colour;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .right{
+//             width: 50%;
+
+//             .links{
+//                 display: flex;
+//                 justify-content: flex-start;
+//                 gap: 80px;
+
+//                 .inlinks{
+//                     h3{
+//                         font-size: 0.9rem;
+//                         margin-bottom: 20px;
+//                         font-weight: 600;
+//                     }
+//                     ul{
+//                         list-style: none;
+//                         padding: 0;
+//                         li{
+//                             margin-bottom: 10px;
+//                             a{
+//                                 text-decoration: none;
+                                
+//                                 color: $text-colour;
+//                                 font-size: 0.85rem;
+//                                 transition: 0.2s;
+
+//                                 &:hover{
+//                                     font-weight: 600;
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     p a{
+//                         text-decoration: none;
+//                         color: $text-colour;
+//                         font-size: 0.85rem;
+//                         &:hover{
+//                                     font-weight: 600;
+//                                 }
+//                     }
+//                 }
+//             }
+
+//             .socialsicons{
+//                 margin-top: 40px;
+//                 display: flex;
+//                 gap: 20px;
+
+//                 .sclicon{
+//                     font-size: 1.1rem;
+//                     color: $text-colour;
+//                     transition: all 0.3s ease-in-out;
+
+//                     &:hover{
+//                         color: #1c1a0b;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .bottom{
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         padding: 30px 20px;
+//         font-size: 0.75rem;
+//         border-top: 1px solid #eeeeee;
+//         color: #777;
+//         a{
+//             color: #333;
+//             text-decoration: underline;
+//         }
+//     }
+// }
 
 .footer{
     font-family: 'inter', sans-serif;
-    width: 100%;
-    border-top: 1px solid #e2e2e2;
-    .container{
+    padding: 4rem 2rem;
+    background: #222;
+    color: white;
+    .top{
         display: flex;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 60px 20px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #363308;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+
+        .items{
+            display: flex;
+            gap: 2rem;
+
+            p{
+                font-size: 0.85rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    }
+
+    .mnft{
+        display: flex;
+        gap: 4rem;
 
         .left{
-            width: 40%;
-            padding-right: 5%;
-            h2{
-                font-size: 1.1rem;
-                font-weight: 500;
-                margin-bottom: 20px;
-            }
-            .foterform{
+            width: 65%;
+            display: flex;
+            flex-direction: row;
+            .atags{
+                width: 33.33%;
                 display: flex;
                 flex-direction: column;
-                gap: 2rem;
-                input{
-                    background: transparent;
-                    padding: 12px 0;
-                    border: none;
-                    border-bottom: 1px solid $text-colour;
-                    width: 100%;
-                    max-width: 300px;
-                    outline: none;
-                    margin-bottom: 20px;
+                h3{
+                    margin-bottom: 1.5rem;
                     font-size: 0.9rem;
+                    font-weight: 500;
+                    border-bottom: 3px solid #363308;
+                    padding-bottom: 20px;
                 }
-                button{
-                    width: 18rem;
-                    height: 3rem;
-                    background: transparent;
-                    color: white;
-                    border: 1px solid $text-colour;
-                    transition: 0.3s ease;
-
+                a{
+                    font-size: 0.85rem;
+                    text-decoration: none;
+                    color: #ccc;
+                    margin-bottom: 0.75rem;
+                    transition: 0.3s;
                     &:hover{
-                        background: transparent;
-                        color: $text-colour;
+                        color: #fff;
                     }
+                }
+
+                p{
+                    font-size: 0.85rem;
+                    line-height: 1.6;
+                    color: #aaa;
                 }
             }
         }
 
         .right{
-            width: 50%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
 
-            .links{
+            h4{
+                font-size: 0.95rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+            }
+            form{
                 display: flex;
-                justify-content: flex-start;
-                gap: 80px;
-
-                .inlinks{
-                    h3{
-                        font-size: 0.9rem;
-                        margin-bottom: 20px;
-                        font-weight: 600;
-                    }
-                    ul{
-                        list-style: none;
-                        padding: 0;
-                        li{
-                            margin-bottom: 10px;
-                            a{
-                                text-decoration: none;
-                                
-                                color: $text-colour;
-                                font-size: 0.85rem;
-                                transition: 0.2s;
-
-                                &:hover{
-                                    font-weight: 600;
-                                }
-                            }
-                        }
-                    }
-
-                    p a{
-                        text-decoration: none;
-                        color: $text-colour;
-                        font-size: 0.85rem;
-                        &:hover{
-                                    font-weight: 600;
-                                }
-                    }
+                gap: 1rem;
+                flex-direction: column;
+            input{
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                border: 1px solid gray;
+                font-size: 0.85rem;
+                background: #2c2900;
+                color: #fff;
+                outline: none;
+                &:focus{
+                    border-bottom-color: gray;
                 }
             }
-
-            .socialsicons{
-                margin-top: 40px;
+            .tick{
                 display: flex;
-                gap: 20px;
+                align-items: flex-start;
+                gap: 0.75rem;
+                margin-top: 0.5rem;
 
-                .sclicon{
+                input{
+                    width: 14px;
+                    height: 14px;
+                    margin-top: 0.2rem;
+                    cursor: pointer;
+                }
+                p{
+                    font-size: 0.75rem;
+                    line-height: 1.5;
+                    color: #999;
+                }
+            }
+            button{
+                margin-top: 1rem;
+                padding: 0.8rem 2.5rem;
+                background: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+                font-size: 0.8rem;
+                cursor: pointer;
+                align-self: flex-start;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background: rgb(40, 38, 38);
+                }
+            }
+            }
+
+            .icondiv{
+                display: flex;
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+
+                a{
                     font-size: 1.1rem;
-                    color: $text-colour;
-                    transition: all 0.3s ease-in-out;
-
+                    color: #fff;
+                    opacity: 0.6;
+                    i{
+                        font-size: 1.5rem;
+                    }
                     &:hover{
-                        color: #1c1a0b;
+                        opacity: 0.8;
                     }
                 }
             }
+
         }
     }
 
     .bottom{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 30px 20px;
-        font-size: 0.75rem;
-        border-top: 1px solid #eeeeee;
-        color: #777;
-        a{
-            color: #333;
-            text-decoration: underline;
-        }
+        font-size: small;
+        position: relative;
+        top: 30px;
+        padding: 1rem;
+        border-top: 3px solid #363308;
     }
-}
+
+
+        @media screen and (max-width: 1024px){
+            .mnft{
+                .left{
+                    width: 60%;
+                }
+                .right{
+                    width: 40%;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            padding: 3rem 1.5rem;
+
+            .top{
+                flex-direction: column;
+                align-items: flex-start;
+                .items{
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+
+            .mnft{
+                flex-direction: column;
+                gap: 3rem;
+                .left{
+                    width: 100%;
+                    flex-direction: column;
+                    .atags{
+                        width: 100%;
+                    }
+                }
+
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
 
 @media screen and (max-width: 1024px){
    .sec8-container{
@@ -3626,7 +5274,22 @@ width: 100%;
    }
 
 
-}
+
+   .gsec9-container{
+    flex-direction: column;
+   }
+   .sec8-img, .insec8-text{
+    width: 100%;
+   }
+   .sec8-img{
+    height: 350px;
+   }
+   .insec8-text{
+    text-align: center;
+    padding: 40px 20px;
+   }
+   }
+
 @media screen and (max-width: 768px){
     .footer .container{
         .left, .right{
@@ -3674,6 +5337,21 @@ width: 100%;
     }
 
     .sec8 .sec8-container{
+     margin-top: 10px;
+     flex-direction: column;
+     .sec8-img img{
+        object-fit: contain;
+     }
+     .sec8-text{
+        width: 100%;
+        margin-bottom: 4rem;
+        h2{
+            font-size: 3rem;
+        }
+     }   
+    }
+
+    .gsec9 .gsec9-container{
      margin-top: 10px;
      flex-direction: column;
      .sec8-img img{

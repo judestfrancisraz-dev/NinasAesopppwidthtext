@@ -173,25 +173,106 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .scsec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
-}
-.scsec1 .inhbsec1 {
+  font-family: "inter", sans-serif;
   position: relative;
+  bottom: 19px;
   width: 100%;
-  line-height: 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.scsec1 .inhbsec1 .inhbsec1img {
+.scsec1 .insec-4 {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
-.scsec1 .inhbsec1 .inhbsec1img img {
+.scsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop444_Category_Page_Skin_Care_Primary_Desktop_2880x1044px_V2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.scsec1 .insec4imgdiv img {
+  display: none;
+}
+.scsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.scsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.scsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.scsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.scsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.scsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .scsec1 {
+    min-height: 60vh;
+  }
+  .scsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .scsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .scsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .scsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .scsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .scsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .scsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
 }
 
 .sec3 {
@@ -238,10 +319,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product img {
+.sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product .insec3-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product .insec3-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product .insec3-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product .insec3-img:hover .first {
+  opacity: 0;
+}
+.sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product .insec3-img:hover .second {
+  opacity: 1;
 }
 .sec3 .in_sec3 .main_insec3 .indec3s-products .indec3-product .insec3-caption {
   font-family: "Inter", sans-serif;
@@ -359,6 +465,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .sec8 {
+  font-family: "Instrument Sans", sans-serif;
   width: 100%;
   margin-top: 100px;
 }
@@ -448,28 +555,6 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   font-weight: 150;
 }
 
-.nnsec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
-}
-.nnsec1 .inhbsec1 {
-  position: relative;
-  width: 100%;
-  line-height: 0;
-}
-.nnsec1 .inhbsec1 .inhbsec1img {
-  width: 100%;
-  height: auto;
-}
-.nnsec1 .inhbsec1 .inhbsec1img img {
-  width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .nn-sec2 {
   display: flex;
   align-items: center;
@@ -517,10 +602,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img img {
+.nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .first {
+  opacity: 0;
+}
+.nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .second {
+  opacity: 1;
 }
 .nn-sec2 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-caption {
   font-family: "Inter", sans-serif;
@@ -625,10 +735,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img img {
+.nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img:hover .first {
+  opacity: 0;
+}
+.nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img:hover .second {
+  opacity: 1;
 }
 .nnsec4 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-caption {
   font-family: "Inter", sans-serif;
@@ -828,10 +963,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-img img {
+.nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-img:hover .first {
+  opacity: 0;
+}
+.nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-img:hover .second {
+  opacity: 1;
 }
 .nnsec6 .innnsec6 .main_innnsec6 .innnsec6-products .innnsec6-product .innnsec6-caption {
   font-family: "Inter", sans-serif;
@@ -1261,26 +1421,213 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   }
 }
 
-.hbsec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
-}
-.hbsec1 .inhbsec1 {
+.hmsec1 {
+  font-family: "inter", sans-serif;
   position: relative;
+  bottom: 19px;
   width: 100%;
-  line-height: 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.hbsec1 .inhbsec1 .inhbsec1img {
+.hmsec1 .insec-4 {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
-.hbsec1 .inhbsec1 .inhbsec1img img {
+.hmsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop_Scents_2026_Web_Catagory_Page_Primary_Full_Bleed_Hero_Desktop_US_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hmsec1 .insec4imgdiv img {
+  display: none;
+}
+.hmsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: white;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hmsec1 .insec4-text span {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.hmsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.hmsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.hmsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.hmsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.hmsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .hmsec1 {
+    min-height: 60vh;
+  }
+  .hmsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .hmsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hmsec1 {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .hmsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .hmsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .hmsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .hmsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
+}
+
+.hbsec1 {
+  font-family: "inter", sans-serif;
+  position: relative;
+  bottom: 19px;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.hbsec1 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.hbsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop555_Category_Page_Hand_Body_Care_Primary_Desktop_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hbsec1 .insec4imgdiv img {
+  display: none;
+}
+.hbsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hbsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.hbsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.hbsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.hbsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.hbsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .hbsec1 {
+    min-height: 60vh;
+  }
+  .hbsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .hbsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hbsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .hbsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .hbsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .hbsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .hbsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
 }
 
 .hbsec2 {
@@ -1373,10 +1720,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img img {
+.hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .first {
+  opacity: 0;
+}
+.hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .second {
+  opacity: 1;
 }
 .hbsec3 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-caption {
   font-family: "Inter", sans-serif;
@@ -2122,25 +2494,106 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .fsec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
-}
-.fsec1 .inhbsec1 {
+  font-family: "inter", sans-serif;
   position: relative;
+  bottom: 19px;
   width: 100%;
-  line-height: 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.fsec1 .inhbsec1 .inhbsec1img {
+.fsec1 .insec-4 {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
-.fsec1 .inhbsec1 .inhbsec1img img {
+.fsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop777_Category_Page_Fragrance_Primary_Desktop_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fsec1 .insec4imgdiv img {
+  display: none;
+}
+.fsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.fsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.fsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.fsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.fsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.fsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .fsec1 {
+    min-height: 60vh;
+  }
+  .fsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .fsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .fsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .fsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .fsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .fsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
 }
 
 .fsec3 {
@@ -2358,25 +2811,106 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .hsec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
-}
-.hsec1 .inhbsec1 {
+  font-family: "inter", sans-serif;
   position: relative;
+  bottom: 19px;
   width: 100%;
-  line-height: 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.hsec1 .inhbsec1 .inhbsec1img {
+.hsec1 .insec-4 {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
-.hsec1 .inhbsec1 .inhbsec1img img {
+.hsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop_Category_Page_Hair_Desktop_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hsec1 .insec4imgdiv img {
+  display: none;
+}
+.hsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.hsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.hsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.hsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.hsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .hsec1 {
+    min-height: 60vh;
+  }
+  .hsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .hsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .hsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .hsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .hsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .hsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
 }
 
 .fsec2 {
@@ -2421,25 +2955,209 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .tsec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
-}
-.tsec1 .inhbsec1 {
+  font-family: "inter", sans-serif;
   position: relative;
+  bottom: 6px;
   width: 100%;
-  line-height: 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.tsec1 .inhbsec1 .inhbsec1img {
+.tsec1 .insec-4 {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
-.tsec1 .inhbsec1 .inhbsec1img img {
+.tsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/hero-banner-desktop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tsec1 .insec4imgdiv img {
+  display: none;
+}
+.tsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.tsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.tsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.tsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.tsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.tsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .tsec1 {
+    min-height: 60vh;
+  }
+  .tsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .tsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .tsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .tsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .tsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .tsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
+}
+
+.gfsec1 {
+  font-family: "inter", sans-serif;
+  position: relative;
+  bottom: 19px;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.gfsec1 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.gfsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop_Festive_2025_NGL_Category_Page_Gifts_Primary_V2_GL_Full_Bleed_Desktop_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gfsec1 .insec4imgdiv img {
+  display: none;
+}
+.gfsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.gfsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.gfsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.gfsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.gfsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.gfsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .gfsec1 {
+    min-height: 60vh;
+  }
+  .gfsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .gfsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gfsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .gfsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .gfsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .gfsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .gfsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
 }
 
 .tsec3 {
@@ -2551,25 +3269,321 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .cusec1 {
-  width: 100%;
-  display: block;
-  margin-bottom: 200px;
-}
-.cusec1 .inhbsec1 {
+  font-family: "inter", sans-serif;
   position: relative;
   width: 100%;
-  line-height: 0;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.cusec1 .inhbsec1 .inhbsec1img {
+.cusec1 .insec-4 {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
 }
-.cusec1 .inhbsec1 .inhbsec1img img {
+.cusec1 .insec4imgdiv {
+  margin-bottom: 100px;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop555_Careers_Page_2024_Web_Homepage_Primary_Full_Bleed_Desktop_1920x420.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (Max-width: 1020px) {
+  .cusec1 .insec4imgdiv {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.cusec1 .insec4imgdiv img {
+  display: none;
+}
+.cusec1 .insec4-text {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 20%;
+}
+.cusec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.cusec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.cusec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.cusec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.cusec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .cusec1 {
+    min-height: 60vh;
+  }
+  .cusec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .cusec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cusec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .cusec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .cusec1 .insec4-text {
+    position: relative;
+    bottom: 200px;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: left;
+    color: #fffac3;
+  }
+  .cusec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .cusec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
+}
+
+.expe1 {
+  font-family: "inter", sans-serif;
+  position: relative;
+  bottom: 19px;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.expe1 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.expe1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop_Experience_Page_Primary_Desktop_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.expe1 .insec4imgdiv img {
+  display: none;
+}
+.expe1 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.expe1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.expe1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.expe1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.expe1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.expe1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .expe1 {
+    min-height: 60vh;
+  }
+  .expe1 .insec4-text {
+    margin-left: 5%;
+  }
+  .expe1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .expe1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .expe1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .expe1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .expe1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .expe1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
+}
+
+.nnsec1 {
+  font-family: "inter", sans-serif;
+  position: relative;
+  bottom: 19px;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.nnsec1 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nnsec1 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesop666_Festive_2025_NGL_Category_Page_New_and_Notable_Primary_Full_Bleed_Desktop_2880x1044px.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nnsec1 .insec4imgdiv img {
+  display: none;
+}
+.nnsec1 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 33%;
+  padding: 2rem;
+  color: #fffac3;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.nnsec1 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.nnsec1 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.nnsec1 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.nnsec1 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.nnsec1 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .nnsec1 {
+    min-height: 60vh;
+  }
+  .nnsec1 .insec4-text {
+    margin-left: 5%;
+  }
+  .nnsec1 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nnsec1 {
+    flex-direction: column;
+    position: relative;
+    top: 1px;
+  }
+  .nnsec1 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .nnsec1 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    color: #fffac3;
+  }
+  .nnsec1 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .nnsec1 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
 }
 
 .cusec2 {
@@ -3120,120 +4134,655 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
      object-fit: cover;
 }
 
-.footer {
-  font-family: "inter", sans-serif;
+.gsec3 {
+  position: relative;
   width: 100%;
-  border-top: 1px solid #e2e2e2;
-}
-.footer .container {
+  min-height: 80vh;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+  margin-top: 100px;
 }
-.footer .container .left {
-  width: 40%;
-  padding-right: 5%;
+.gsec3 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-.footer .container .left h2 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+.gsec3 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesopseasonalgiftkits_Festive_2025_NGL_Category_Page_Gifts_Secondary_Banner_Seasonal_Kits_GL_Desktop_2880x1044px.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.footer .container .left .foterform {
+.gsec3 .insec4imgdiv img {
+  display: none;
+}
+.gsec3 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 8%;
+  padding: 2rem;
+  color: white;
+  font-family: "inter" sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-.footer .container .left .foterform input {
-  background: transparent;
-  padding: 12px 0;
-  border: none;
-  border-bottom: 1px solid white;
+.gsec3 .insec4-text span {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.gsec3 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.gsec3 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.gsec3 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   max-width: 300px;
-  outline: none;
-  margin-bottom: 20px;
-  font-size: 0.9rem;
-}
-.footer .container .left .foterform button {
-  width: 18rem;
-  height: 3rem;
-  background: transparent;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
   color: white;
-  border: 1px solid white;
-  transition: 0.3s ease;
-}
-.footer .container .left .foterform button:hover {
+  transition: all 0.4s;
   background: transparent;
+}
+.gsec3 .insec4-text .sec4btn button a {
+  text-decoration: none;
   color: white;
 }
-.footer .container .right {
-  width: 50%;
+.gsec3 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
 }
-.footer .container .right .links {
+
+.gsec5 {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.gsec5 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.gsec5 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesopcategorypage_Festive_2025_NGL_Category_Page_Gifts_Secondary_Banner_Widely_Cherished_Desktop_2880x1044px.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gsec5 .insec4imgdiv img {
+  display: none;
+}
+.gsec5 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 8%;
+  padding: 2rem;
+  color: white;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.gsec5 .insec4-text span {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.gsec5 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.gsec5 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.gsec5 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.gsec5 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.gsec5 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .gsec5 {
+    min-height: 60vh;
+  }
+  .gsec5 .insec4-text {
+    margin-left: 5%;
+  }
+  .gsec5 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gsec5 {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .gsec5 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .gsec5 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+  }
+  .gsec5 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .gsec5 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
+}
+
+.gsec7 {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.gsec7 .insec-4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.gsec7 .insec4imgdiv {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(../aesop_images/Aesopcheerful_Festive_2025_NGL_Category_Page_Gifts_Secondary_Banner_Fragrance_Desktop_2880x1044px.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gsec7 .insec4imgdiv img {
+  display: none;
+}
+.gsec7 .insec4-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 8%;
+  padding: 2rem;
+  color: white;
+  font-family: "inter" sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.gsec7 .insec4-text span {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.gsec7 .insec4-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.gsec7 .insec4-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.gsec7 .insec4-text .sec4btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #363308;
+  color: white;
+  transition: all 0.4s;
+  background: transparent;
+}
+.gsec7 .insec4-text .sec4btn button a {
+  text-decoration: none;
+  color: white;
+}
+.gsec7 .insec4-text .sec4btn button:hover {
+  background-color: #363308;
+}
+@media screen and (max-width: 1024px) {
+  .gsec7 {
+    min-height: 60vh;
+  }
+  .gsec7 .insec4-text {
+    margin-left: 5%;
+  }
+  .gsec7 .insec4-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gsec7 {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .gsec7 .insec4imgdiv {
+    position: relative;
+    height: 350px;
+  }
+  .gsec7 .insec4-text {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    text-align: left;
+  }
+  .gsec7 .insec4-text h1 {
+    font-size: 1.8rem;
+  }
+  .gsec7 .insec4-text .sec4btn button {
+    max-width: 100%;
+  }
+}
+
+.gsec9 {
+  font-family: "Instrument Sans", sans-serif;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.gsec9-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sec8-img {
+  margin-top: 100px;
+  width: 60%;
+  height: 500px;
+}
+.sec8-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.insec8-text {
+  width: 40%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.insec8-text h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.insec8-text h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.insec8-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.sec8btn button {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border: 2px solid #363308;
+  background: transparent;
+  transition: 0.3s;
+  color: white;
+}
+.sec8btn button:hover {
+  background: #363308;
+}
+
+.lsec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 100px;
+}
+.lsec2 .lsec2-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 80px;
 }
-.footer .container .right .links .inlinks h3 {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  font-weight: 600;
+@media screen and (max-width: 1300px) {
+  .lsec2 .lsec2-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
-.footer .container .right .links .inlinks ul {
-  list-style: none;
-  padding: 0;
+@media screen and (max-width: 878px) {
+  .lsec2 .lsec2-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
-.footer .container .right .links .inlinks ul li {
-  margin-bottom: 10px;
-}
-.footer .container .right .links .inlinks ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.85rem;
-  transition: 0.2s;
-}
-.footer .container .right .links .inlinks ul li a:hover {
-  font-weight: 600;
-}
-.footer .container .right .links .inlinks p a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.85rem;
-}
-.footer .container .right .links .inlinks p a:hover {
-  font-weight: 600;
-}
-.footer .container .right .socialsicons {
-  margin-top: 40px;
+.lsec2 .lsec2-container .pic-items {
+  width: 370px;
+  height: 353px;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
 }
-.footer .container .right .socialsicons .sclicon {
-  font-size: 1.1rem;
+@media screen and (max-width: 424px) {
+  .lsec2 .lsec2-container .pic-items {
+    width: 250px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .lsec2 .lsec2-container .pic-items {
+    width: 200px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 238px) {
+  .lsec2 .lsec2-container .pic-items {
+    width: 150px;
+    height: 220px;
+  }
+}
+.lsec2 .lsec2-container .pic-items .top {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid purple;
+}
+.lsec2 .lsec2-container .pic-items .top img {
+  width: 100%;
+  height: 100%;
+}
+.lsec2 .lsec2-container .pic-items .bottom {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid orange;
+}
+.lsec2 .lsec2-container .pic-items .bottom .bottom-text {
+  position: relative;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.lsec2 .lsec2-container .pic-items .bottom .bottom-text h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.lsec2 .lsec2-container .pic-items .bottom .bottom-text p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.lsec2 .lsec2-container .pic-items .bottom .bottom-text .fpp {
+  font-size: 14px;
+  font-weight: 250;
+  color: #8a8080;
+}
+
+.psec7 {
+  margin-top: 100px;
+  width: 100%;
+  background: #26240f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.psec7 .cusec4container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.psec7 .cusec4container h1 {
+  font-weight: 250;
+}
+.psec7 .cusec4container h3 {
+  font-weight: 250;
+  font-size: large;
+}
+
+.footer {
+  font-family: "inter", sans-serif;
+  padding: 4rem 2rem;
+  background: #222;
   color: white;
-  transition: all 0.3s ease-in-out;
 }
-.footer .container .right .socialsicons .sclicon:hover {
-  color: #1c1a0b;
+.footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #363308;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.footer .top .items {
+  display: flex;
+  gap: 2rem;
+}
+.footer .top .items p {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer .mnft {
+  display: flex;
+  gap: 4rem;
+}
+.footer .mnft .left {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+}
+.footer .mnft .left .atags {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .mnft .left .atags h3 {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 3px solid #363308;
+  padding-bottom: 20px;
+}
+.footer .mnft .left .atags a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #ccc;
+  margin-bottom: 0.75rem;
+  transition: 0.3s;
+}
+.footer .mnft .left .atags a:hover {
+  color: #fff;
+}
+.footer .mnft .left .atags p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+.footer .mnft .right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer .mnft .right h4 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.footer .mnft .right form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer .mnft .right form input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border: 1px solid gray;
+  font-size: 0.85rem;
+  background: #2c2900;
+  color: #fff;
+  outline: none;
+}
+.footer .mnft .right form input:focus {
+  border-bottom-color: gray;
+}
+.footer .mnft .right form .tick {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.footer .mnft .right form .tick input {
+  width: 14px;
+  height: 14px;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+.footer .mnft .right form .tick p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #999;
+}
+.footer .mnft .right form button {
+  margin-top: 1rem;
+  padding: 0.8rem 2.5rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s ease;
+}
+.footer .mnft .right form button:hover {
+  background: rgb(40, 38, 38);
+}
+.footer .mnft .right .icondiv {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.footer .mnft .right .icondiv a {
+  font-size: 1.1rem;
+  color: #fff;
+  opacity: 0.6;
+}
+.footer .mnft .right .icondiv a i {
+  font-size: 1.5rem;
+}
+.footer .mnft .right .icondiv a:hover {
+  opacity: 0.8;
 }
 .footer .bottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  font-size: 0.75rem;
-  border-top: 1px solid #eeeeee;
-  color: #777;
+  font-size: small;
+  position: relative;
+  top: 30px;
+  padding: 1rem;
+  border-top: 3px solid #363308;
 }
-.footer .bottom a {
-  color: #333;
-  text-decoration: underline;
+@media screen and (max-width: 1024px) {
+  .footer .mnft .left {
+    width: 60%;
+  }
+  .footer .mnft .right {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 3rem 1.5rem;
+  }
+  .footer .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .top .items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer .mnft {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .footer .mnft .left {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer .mnft .left .atags {
+    width: 100%;
+  }
+  .footer .mnft .right {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .sec8-container {
+    flex-direction: column;
+  }
+  .sec8-img, .insec8-text {
+    width: 100%;
+  }
+  .sec8-img {
+    height: 350px;
+  }
+  .insec8-text {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .gsec9-container {
     flex-direction: column;
   }
   .sec8-img, .insec8-text {
@@ -3303,6 +4852,21 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
     margin-bottom: 4rem;
   }
   .sec8 .sec8-container .sec8-text h2 {
+    font-size: 3rem;
+  }
+  .gsec9 .gsec9-container {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .gsec9 .gsec9-container .sec8-img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .gsec9 .gsec9-container .sec8-text {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .gsec9 .gsec9-container .sec8-text h2 {
     font-size: 3rem;
   }
   .footer-container {
