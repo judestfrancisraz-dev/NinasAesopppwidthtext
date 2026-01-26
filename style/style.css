@@ -117,6 +117,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .sec-below {
+  font-family: "inter", sans-serif;
   background-color: #2c2900;
   display: flex;
   align-items: center;
@@ -1956,10 +1957,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img img {
+.hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .first {
+  opacity: 0;
+}
+.hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .second {
+  opacity: 1;
 }
 .hbsec5 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-caption {
   font-family: "Inter", sans-serif;
@@ -2303,10 +2329,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img img {
+.hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .first {
+  opacity: 0;
+}
+.hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-img:hover .second {
+  opacity: 1;
 }
 .hbsec9 .innnsec2 .main_innnsec2 .innnsec2-products .innnsec2-product .innnsec2-caption {
   font-family: "Inter", sans-serif;
@@ -3204,10 +3255,35 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   text-align: center;
   width: 399px;
 }
-.tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img img {
+.tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img .first {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
-  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+.tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img .second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img:hover .first {
+  opacity: 0;
+}
+.tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-img:hover .second {
+  opacity: 1;
 }
 .tsec3 .innnsec4 .main_innnsec4 .innnsec4-products .innnsec4-product .innnsec4-caption {
   font-family: "Inter", sans-serif;
@@ -3898,7 +3974,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 .productsec {
   width: 100%;
   padding: 64px 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", sans-serif;
 }
 .productsec .cont {
   display: grid;
@@ -3911,12 +3987,15 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   .productsec .cont {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 0 10px;
   }
 }
 .productsec .cont .prdctimg img {
   width: 100%;
   height: auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .productsec .cont .sectext {
   display: grid;
@@ -3934,6 +4013,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 .productsec .cont .sectext p {
   font-size: 1rem;
+  width: 100%;
   max-width: 480px;
   color: white;
 }
@@ -3942,29 +4022,31 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid #89877f;
-  width: 450px;
-  gap: 0.1rem;
-  height: 3.5rem;
-}
-.productsec .cont .sectext .singlediv h3 {
-  font-size: 1.1rem;
-  font-weight: 400;
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #89877f h3;
+  border-font-size: 1.1rem;
+  border-font-weight: 300;
 }
 .productsec .cont .sectext .singlediv p {
+  position: relative;
+  left: 195px;
   color: rgba(255, 255, 255, 0.39);
+  max-width: 100%;
 }
 .productsec .cont .sectext .price {
   font-size: 18px;
 }
 .productsec .cont .sectext .price button {
-  font-size: 16px;
+  font-size: 1rem;
   border: 3px solid #46421e;
   background: rgba(128, 128, 128, 0.493);
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 2.6rem;
   color: white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 .productsec .cont .sectext .price button:hover {
   background: rgba(23, 27, 28, 0.8666666667);
@@ -3973,7 +4055,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 .productsec2 {
   width: 100%;
   padding: 64px 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", sans-serif;
 }
 .productsec2 .cont {
   display: grid;
@@ -3998,35 +4080,27 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   align-content: start;
   gap: 1rem;
 }
-.productsec2 .cont .sectext .pprice {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: white;
-}
-.productsec2 .cont .sectext h2 {
-  font-size: 2rem;
-  font-weight: 400;
-}
 .productsec2 .cont .sectext p {
   font-size: 1rem;
-  max-width: 480px;
+  width: 100%;
+  max-width: 4800px;
   color: white;
 }
 .productsec2 .cont .sectext .singlediv {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 450px;
-  gap: 1rem;
-  height: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  width: 100%;
+  max-width: 450px;
+  gap: 10px;
+  height: auto;
 }
 .productsec2 .cont .sectext .singlediv button {
-  width: 400px;
+  width: 100%;
   height: 3.5rem;
   background: transparent;
   border: 1px solid #403e0c;
-  cursor: pointer;
   color: white;
+  padding: 5px;
 }
 .productsec2 .cont .sectext .singlediv button:hover {
   border: 1px solid rgba(255, 255, 255, 0.362);
@@ -4034,17 +4108,16 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 .productsec2 .cont .sectext .singlediv button:active {
   border: 2px solid white;
 }
-.productsec2 .cont .sectext .price {
-  font-size: 18px;
-}
 .productsec2 .cont .sectext .price button {
-  font-size: 16px;
+  width: 100%;
+  max-width: 450px;
+  height: 2.6rem;
+  font-size: 1rem;
   border: 3px solid #46421e;
   background: rgba(128, 128, 128, 0.493);
-  width: 450px;
-  height: 2.6rem;
   color: white;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .productsec2 .cont .sectext .price button:hover {
   background: rgba(23, 27, 28, 0.8666666667);
@@ -4135,6 +4208,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .gsec3 {
+  font-family: "inter", sans-serif;
   position: relative;
   width: 100%;
   min-height: 80vh;
@@ -4206,12 +4280,12 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .gsec5 {
+  font-family: "inter", sans-serif;
   position: relative;
   width: 100%;
   min-height: 80vh;
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
   overflow: hidden;
   margin-top: 100px;
 }
@@ -4310,14 +4384,13 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .gsec7 {
+  font-family: "inter", sans-serif;
   position: relative;
   width: 100%;
   min-height: 80vh;
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
   overflow: hidden;
-  margin-top: 100px;
 }
 .gsec7 .insec-4 {
   width: 100%;
