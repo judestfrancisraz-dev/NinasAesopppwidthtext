@@ -4134,9 +4134,6 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 .gsec1 h2 {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 350;
-  text-align: left;
-  position: relative;
-  right: 300px;
 }
 .gsec1 .imgdiv {
   width: 70%;
