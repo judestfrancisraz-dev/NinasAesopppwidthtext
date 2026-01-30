@@ -1320,6 +1320,7 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
 }
 
 .scsec6 {
+  font-family: "inter", sans-serif;
   position: relative;
   width: 100%;
   min-height: 80vh;
@@ -1369,6 +1370,10 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   font-size: 1.1rem;
   font-weight: 300;
 }
+.scsec6 .insec4-text .sec4btn a {
+  text-decoration: none;
+  color: white;
+}
 .scsec6 .insec4-text .sec4btn button {
   display: flex;
   align-items: center;
@@ -1380,10 +1385,6 @@ header .in-header-div .below-ihd .bihd-ul li a:hover::after {
   color: white;
   transition: all 0.4s;
   background: transparent;
-}
-.scsec6 .insec4-text .sec4btn button a {
-  text-decoration: none;
-  color: white;
 }
 .scsec6 .insec4-text .sec4btn button:hover {
   background-color: #363308;

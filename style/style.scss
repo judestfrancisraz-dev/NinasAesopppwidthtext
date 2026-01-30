@@ -1455,6 +1455,7 @@ width: 100%;
 
 
 .scsec6{
+    font-family: 'inter', sans-serif;
     position: relative;
     width: 100%;
     min-height: 80vh;
@@ -1506,7 +1507,12 @@ width: 100%;
             font-weight: 300;
         }
 
-        .sec4btn button{
+        .sec4btn{
+            a{
+                text-decoration: none;
+                color: white;
+            }
+         button{
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -1517,13 +1523,10 @@ width: 100%;
             color: white;
             transition: all 0.4s;
             background: transparent;
-            a{
-                text-decoration: none;
-                color: $text-colour;
-            }
 
             &:hover{
                 background-color: $anthbtn;
+            }
             }
         }
     }
